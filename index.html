@@ -55,105 +55,172 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-
-    <tr onmouseout="bog_stop()" onmouseover="bog_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='bog_image'><video  width=100% muted autoplay loop>
-          <source src="images/bog.jpg" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/bog.jpg' width=100%>
-        </div>
-        <script type="text/javascript">
-          function bog_start() {
-            document.getElementById('bog_image').style.opacity = "1";
-          }
-
-          function bog_stop() {
-            document.getElementById('bog_image').style.opacity = "0";
-          }
-          bog_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://creiser.github.io/binary_opacity_grid/">
-          <span class="papertitle">Binary Opacity Grids: Capturing Fine Geometric Detail for Mesh-Based View Synthesis
-</span>
-        </a>
-        <br>
-				<a href="https://creiser.github.io/">Christian Reiser</a>,
-				<a href="http://stephangarbin.com/">Stephan J. Garbin</a>,
-				<a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-				<a href="https://dorverbin.github.io/">Dor Verbin</a>,
-				<a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
-				<a href="https://bmild.github.io/">Ben Mildenhall</a>,
-				<strong>Jonathan T. Barron</strong>,
-				<a href="https://phogzone.com/">Peter Hedman</a>*,
-				<a href="https://www.cvlibs.net/">Andreas Geiger</a>*		
-        <br>
-        <em>SIGGRAPH</em>, 2024
-        <br>
-        <a href="https://creiser.github.io/binary_opacity_grid/">project page</a>
-        /
-        <a href="https://www.youtube.com/watch?v=2TPUmGRg8bM">video</a>
-        /
-        <a href="https://arxiv.org/abs/2402.12377">arXiv</a>
-        <p></p>
-        <p>
-        Applying anti-aliasing to a discrete opacity grid lets you render a hard representation into a soft image, and this enables highly-detailed mesh recovery.
-        </p>
-      </td>
-    </tr>
-
-    <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='smerf_image'><video  width=100% muted autoplay loop>
-          <source src="images/smerf.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/smerf.jpg' width=100%>
-        </div>
-        <script type="text/javascript">
-          function smerf_start() {
-            document.getElementById('smerf_image').style.opacity = "1";
-          }
-
-          function smerf_stop() {
-            document.getElementById('smerf_image').style.opacity = "0";
-          }
-          smerf_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://smerf-3d.github.io/">
-          <span class="papertitle">SMERF: Streamable Memory Efficient Radiance Fields for Real-Time Large-Scene Exploration</span>
-        </a>
-        <br>
-		<a href="http://www.stronglyconvex.com/about.html">Daniel Duckworth*</a>,
-		<a href="https://phogzone.com/">Peter Hedman*</a>,
-		<a href="https://creiser.github.io/">Christian Reiser</a>,
-		<a href="">Peter Zhizhin</a>,
-		<a href="">Jean-François Thibert</a>,
-        <a href="https://lucic.ai/">Mario Lučić</a>,
-        <a href="https://szeliski.org/">Richard Szeliski</a>,
-		<strong>Jonathan T. Barron</strong>
-        <br>
-        <em>SIGGRAPH</em>, 2024 &nbsp <font color="red"><strong>(Honorable Mention)</strong></font>
-        <br>
-        <a href="https://smerf-3d.github.io/">project page</a>
-        /
-        <a href="https://www.youtube.com/watch?v=zhO8iUBpnCc">video</a>
-        /
-        <a href="https://arxiv.org/abs/2312.07541">arXiv</a>
-        <p></p>
-        <p>
-        Distilling a Zip-NeRF into a tiled set of MERFs lets you fly through radiance fields on laptops and smartphones at 60 FPS.
-        </p>
-      </td>
-    </tr>
-	
+            <tr onmouseout="atom_stop()" onmouseover="atom_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="one">
+                    <div class="two" id='atom_image'><img src='images/atom.png' width=100%></div>
+                  </div>
+                <script type="text/javascript">
+                  function atom_start() {
+                    document.getElementById('atom_image').style.opacity = "1";
+                  }
+            
+                  function atom_stop() {
+                    document.getElementById('atom_image').style.opacity = "0";
+                  }
+                  atom_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2406.08455">
+                  <span class="papertitle">AToM-Bot: Embodied Fulfillment of Unspoken Human Needs with Affective Theory of Mind</span>
+                </a>
+                <br>
+                <strong>Wei Ding</strong>,
+                <a href="">Fanhong Li</a>,
+                <a href="">Ziteng Ji</a>,
+                <a href="">Zhengrong Xue</a>,
+                <a href="">Jia Liu*</a>,
+                <br>
+                <em>RSS 2024, Social Intelligence in Humans and Robots Workshop Spotlight</em>
+                <em>Under review</em>
+                <br>
+                <a href="https://arxiv.org/abs/2406.08455">arXiv</a>
+                <!-- <p>AToM-Bot was featured as a spotlight project at the RSS 2024 Social Intelligence in Humans and Robots Workshop for its innovative approach to proactively fulfilling human needs using Affective Theory of Mind and Vision Language Models.</p> -->
+              </td>
+            </tr>
+            
+            <tr onmouseout="hippo_stop()" onmouseover="hippo_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='hippo_image'><img src='images/hippo.png' width=100%></div>
+                </div>
+                <script type="text/javascript">
+                  function hippo_start() {
+                    document.getElementById('hippo_image').style.opacity = "1";
+                  }
+            
+                  function hippo_stop() {
+                    document.getElementById('hippo_image').style.opacity = "0";
+                  }
+                  hippo_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://doi.org/10.1101/2024.01.29.577883">
+                  <span class="papertitle">Scale-Dependent Coding of the Hippocampus in Relational Memory</span>
+                </a>
+                <br>
+                <strong>Wei Ding</strong>,
+                <a href="">Yijing Lin</a>,
+                <a href="">Bo Zhang*</a>,
+                <a href="">Jia Liu*</a>,
+                <br>
+                <em>IJCAI 2024, Human Brain and Artificial Intelligence Workshop</em>
+                <em>Under review</em>
+                <br>
+                <a href="https://doi.org/10.1101/2024.01.29.577883">doi</a>
+                <p></p>
+              </td>
+            </tr>
+            
+            <tr onmouseout="reinforce_stop()" onmouseover="reinforce_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='reinforce_image'><img src='images/reinforce.png' width=100%></div>
+                </div>
+                <script type="text/javascript">
+                  function reinforce_start() {
+                    document.getElementById('reinforce_image').style.opacity = "1";
+                  }
+            
+                  function reinforce_stop() {
+                    document.getElementById('reinforce_image').style.opacity = "0";
+                  }
+                  reinforce_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="">
+                  <span class="papertitle">Revealing the Efficient Coding Strategy of Humans in Relational Memory by Reinforcement Learning</span>
+                </a>
+                <br>
+                <a href="">Yijing Lin#</a>,
+                <strong>Wei Ding#</strong>,
+                <a href="">Jia Liu*</a>,
+                <br>
+                <em>In Submission</em>
+                <p></p>
+              </td>
+            </tr>
+            
+            <tr onmouseout="imagenet_stop()" onmouseover="imagenet_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='imagenet_image'><img src='images/esimagenet.gif' width=100%></div>
+                </div>
+                <script type="text/javascript">
+                  function imagenet_start() {
+                    document.getElementById('imagenet_image').style.opacity = "1";
+                  }
+            
+                  function imagenet_stop() {
+                    document.getElementById('imagenet_image').style.opacity = "0";
+                  }
+                  imagenet_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="">
+                  <span class="papertitle">ES-imagenet: A Million Event-Stream Classification Dataset for Spiking Neural Networks</span>
+                </a>
+                <br>
+                <a href="">Yihan Lin</a>,
+                <strong>Wei Ding</strong>,
+                <a href="">Shaohua Qiang</a>,
+                <a href="">Lei Deng</a>,
+                <a href="">Guoqi Li</a>,
+                <br>
+                <em>Frontiers in Neuroscience, 2021</em>
+                <p></p>
+              </td>
+            </tr>
+            
+            <tr onmouseout="snn_stop()" onmouseover="snn_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='snn_image'><img src='images/snn.png' width=100%></div>
+                </div>
+                <script type="text/javascript">
+                  function snn_start() {
+                    document.getElementById('snn_image').style.opacity = "1";
+                  }
+            
+                  function snn_stop() {
+                    document.getElementById('snn_image').style.opacity = "0";
+                  }
+                  snn_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="">
+                  <span class="papertitle">Comparing SNNs and RNNs on Neuromorphic Vision Datasets: Similarities and Differences</span>
+                </a>
+                <br>
+                <a href="">Weihua He et al</a>,
+                <!-- <a href="">Yuejie Wu</a>,
+                <a href="">Lei Deng</a>,
+                <a href="">Guoqi Li</a>,
+                <strong>Wei Ding</strong>
+                <a href="">Wenhui Wang</a>,
+                <a href="">Yuan Xie*</a>, -->
+                <br>
+                <em>Neural Networks, 2020</em>
+                <p></p>
+              </td>
+            </tr>
+            
 
           </tbody></table>
 
@@ -161,71 +228,40 @@
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
               <td>
-                <h2>Miscellanea</h2>
+                <h2>Honor</h2>
               </td>
             </tr>
           </tbody></table>
           <table width="100%" align="center" border="0" cellpadding="20"><tbody>
             
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
-              <td width="75%" valign="center">
-                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
-                <br>
-                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
-                <br>
-                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
-                <br>
-                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
-                <br>
-                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-                <br>
-                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
+              <td colspan="2" style="padding:20px; vertical-align:middle;">
+                <ul style="list-style-type: none; padding-left: 0;">
+                  <li style="margin-bottom: 10px;">
+                    <strong>Outstanding Graduate</strong> (Top 1%), <em>Beijing 2021</em>
+                  </li>
+                  <li style="margin-bottom: 10px;">
+                    <strong>Honored Graduate</strong> (Top 5%), <em>Tsinghua University 2021</em>
+                  </li>
+                  <li style="margin-bottom: 10px;">
+                    <strong>All-Rounder Scholarships</strong> (Top 5%), <em>Department of Precision Instruments 2018, 2019, 2020</em>
+                  </li>
+                  <li style="margin-bottom: 10px;">
+                    <strong>Annual Top Community Service Leader</strong>, <em>Department of Precision Instruments 2018</em>
+                  </li>
+                  <li style="margin-bottom: 10px;">
+                    <strong>Academic Excellence Scholarship</strong>, <em>Department of Precision Instruments 2017</em>
+                  </li>
+                  <li style="margin-bottom: 10px;">
+                    <strong>Silver Medal</strong> in the <em>National High School Students Biology Competition</em>, <em>China 2016</em>
+                  </li>
+                </ul>
               </td>
             </tr>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/cs188.jpg" alt="cs188">
-              </td>
-              <td width="75%" valign="center">
-                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-                <br>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-                <br>
-                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-              </td>
-            </tr>
+            
+            
             
 
-            <tr>
-              <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-                <h2>Basically <br> Blog Posts</h2>
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
-                <br>
-                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
-                <br>
-                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
-                <br>
-                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
-              </td>
-            </tr>
-            
-            
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  Template from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
     </table>
   </body>
 </html>
