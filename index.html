@@ -5,7 +5,24 @@
     <title>Wei Ding</title>
     <meta name="author" content="Wei Ding">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon"> -->
+    <script>
+      // Create a canvas element to draw the emoji on
+      var canvas = document.createElement('canvas');
+      canvas.width = 64;
+      canvas.height = 64;
+      var ctx = canvas.getContext('2d');
+      ctx.font = '50px serif';
+      ctx.fillText('💃', 0, 50);  // Draw the emoji
+
+      // Convert the canvas content to a data URL
+      var favicon = document.createElement('link');
+      favicon.rel = 'shortcut icon';
+      favicon.href = canvas.toDataURL('image/png');  // Set the emoji as favicon
+
+      // Append the new favicon to the document head
+      document.head.appendChild(favicon);
+    </script>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
   </head>
@@ -154,13 +171,85 @@
                 </tr>
               </tbody>
             </table>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <h2>Internship</h2>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; margin-left: 10px; margin-bottom: 20px;">
+              <div style="flex: 1; padding: 10px;">
+                <div id="zhipu_image">
+                  <img src="images/zhipu.jpg" width="100%" style="margin: 0; padding: 0;">
+                </div>
+                <a href="https://www.zhipuai.cn/en/">
+                  <span>Multimodal-LLM post-training intern, Zhipu AI</span>
+                </a>
+                <br>
+                Supervised by Dr. Ming Ding and Dr. Xiaotao Gu.
+              </div>
             
+              <div style="flex: 1; padding: 10px; margin-left: 20px;">
+                <div id="powerlaw_image">
+                  <img src="images/powerlaw.png" width="66%" style="margin: 0; padding: 0;">
+                </div>
+                <a href="https://powerlaw.ai/">
+                  <span>NLP algorithm intern, Powerlaw AI</span>
+                </a>
+                <br>
+                Supervised by Dr. Cunchao Tu.
+              </div>
+            </div>
+            
+            
+            <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:5px 20px;width:25%;vertical-align:top;">
+                    <div class="one">
+                      <div class="two" id="zhipu_image">
+                        <img src="images/zhipu.jpg" width="100%" style="margin-bottom: 0; display:inline-block;">
+                      </div>
+                    </div>
+                  </td>
+                  <td style="padding:5px 20px;width:75%;vertical-align:top;">
+                    <a href="https://www.zhipuai.cn/en/">
+                      <span>Multi-modal large language model post-training intern, Zhipu AI</span>
+                    </a>
+                    <br>
+                    Supervised by Dr. Ming Ding and Dr. Xiaotao Gu.
+                    <br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:5px 20px;width:25%;vertical-align:top;">
+                    <div class="one">
+                      <div class="two" id="powerlaw_image">
+                        <img src="images/powerlaw.jpg" width="100%" style="margin-top: 0; display:inline-block;">
+                      </div>
+                    </div>
+                  </td>
+                  <td style="padding:5px 20px;width:75%;vertical-align:top;">
+                    <a href="https://powerlaw.ai/">
+                      <span>NLP algorithm intern, Powerlaw AI</span>
+                    </a>
+                    <br>
+                    Supervised by Dr. Cunchao Tu.
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+             -->
             <table style="width:95%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
                   <td>
                     <!-- Add margin-top for space above and margin-bottom for space below -->
-                    <h2 style="margin-top:40px; margin-bottom:0px;">Honor</h2>
+                    <h2 style="margin-top:0px; margin-bottom:0px;">Honor</h2>
                   </td>
                 </tr>
               </tbody>
@@ -205,7 +294,10 @@
                         <strong>Outstanding Individual in the National Day 70th Anniversary Celebration</strong>, <em>Beijing</em>
                       </li>
                       <li style="margin-bottom: 10px;">
-                        <strong>XCMG Scholarship</strong> (Top 2), <em>Department of Precision Instruments</em>
+                        <strong>Xugong Scholarship</strong> (Top 2), <em>Department of Precision Instruments</em>
+                      </li>
+                      <li style="margin-bottom: 10px;">
+                        <strong>KLA Scholarship</strong>, <em>KLA Co.</em>
                       </li>
                       <li style="margin-bottom: 10px;">
                         <strong>Microsoft Enterprise Award, 8th Creative Competition</strong>, <em>Microsoft</em>
